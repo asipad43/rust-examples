@@ -1,4 +1,4 @@
 FROM ubuntu:22.04
 WORKDIR /app
 COPY . .
-RUN echo "Hello"
+RUN apt-get update && apt-get install git cmake build-essentials python3.9
