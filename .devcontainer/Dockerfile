@@ -1,4 +1,4 @@
-FROM rust:1.67 as builder
+FROM ubuntu:22.04
 WORKDIR /app
 COPY . .
-RUN cargo install --path .
+RUN echo "Hello"
